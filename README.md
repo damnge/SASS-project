@@ -25,7 +25,6 @@ Nesting is the process of placing selectors inside the scope of another selec
     font-size: 14px;
   }
 }
-
 ```
 
 ### Nesting CSS properties if you append a : colon suffix
@@ -38,7 +37,6 @@ Nesting is the process of placing selectors inside the scope of another selec
     decoration: none;
   }
 }
-
 ```
 
 ## Variables In Sass
@@ -49,7 +47,6 @@ In Sass, $ is used to define and reference a variable:
 
 ```
 $primary-color: rgba(255,255,255,0.3);
-
 ```
 
 ## Sass(y) Types
@@ -62,7 +59,7 @@ In addition to the color data type we have seen, there are also:
 - Booleans, or simply true and false.
 - null, which is considered an empty value.
 
-##Maps & Lists
+## Maps & Lists
 
 In addition to color, numbers, strings, booleans, and null, Sass also has two other data types, lists and maps.
 
@@ -70,14 +67,12 @@ In addition to color, numbers, strings, booleans, and null, Sass also has two ot
 
 ```
 1.5em Helvetica bold;
-
 ```
 
 or
 
 ```
 Helvetica, Arial, sans-serif;
-
 ```
 
 Note: You can also surround a list with parentheses and create lists made up of lists.
@@ -98,14 +93,13 @@ The @forward rule loads a Sass stylesheet and makes its mixins, functions, and v
 
 The @use rule can be used to import other stylesheets as modules, the components of which can then be accessed in a modular fashion. The namespace for the module is just the last component of the path, but can be aliased using ‘as’.
 
-##What is a Mixin?
+## What is a Mixin?
 
 In addition to variables and nesting, Sass has multiple constructs that reduce repetition.
 In Sass, a mixin lets you make groups of CSS declarations that you want to reuse throughout your site.
 The notation for creating a mixin is as follows:
 
 ```
-
 @mixin backface-visibility {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -113,10 +107,9 @@ The notation for creating a mixin is as follows:
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
 }
-
 ```
 
-##Mixins: Arguments
+## Mixins: Arguments
 
 Mixins also have the ability to take in a value.
 An argument, or parameter, is a value passed to the mixin that will be used inside the mixin, such as $visibility in this example:
@@ -136,7 +129,7 @@ The syntax to pass in a value is as follows:
 @include backface-visibility(hidden);
 In the code above, hidden is passed in to the backface-visibility mixin, where it will be assigned as the value of its argument, $visibility.
 
-##Default Value Arguments
+## Default Value Arguments
 
 Mixin arguments can be assigned a default value in the mixin definition by using a special notation.
 A default value is assigned to the argument if no value is passed in when the mixin is included. Defining a default value for each argument is optional.
@@ -150,12 +143,11 @@ The notation is as follows:
   -ms-backface-visibility: $visibility;
   -o-backface-visibility: $visibility;
 }
-
 ```
 
 In the example above, if no value is passed in when backface-visibility is included, hidden would be assigned to all properties.
 
-##Mixin Facts
+## Mixin Facts
 
 In general, here are 5 important facts about arguments and mixins:
 
@@ -188,3 +180,5 @@ div { //passes out of order but explicitly defined
    @include dashed-border(color: purple, width: 5px);
 }
 ```
+
+Thank you for your attention! Happy building!
