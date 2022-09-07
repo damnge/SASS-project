@@ -1,6 +1,6 @@
 # Learning SASS
 
-This is assigment for Vefskolinn course. Module number 3In this project, I've shown some useful methods in SASS like:
+This is assigment for Vefskolinn course, Module number 3. In this project, I've shown some useful methods in SASS like:
 
 - Nesting
 - Variables
