@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sass Demo Project</title>
+  </head>
+  <body>
+    <!-- main content of the body divided by different sections -->
+
+    <!-- Header at at the same time 1st section, it contains artcile with heading, paragraph and button -->
+    <header class="first__section" id="my_section_1">
+      <article class="text__wrapper">
+        <h1>Hello Everyone!</h1>
+        <p>
+          Selectors that are nested inside the scope of another selector are
+          referred to as children. The former selector is referred to as
+          the parent. This is just like the relationship observed in HTML
+          elements. In SCSS, nesting is not limited only to selectors. You can
+          also nest common CSS properties if you append a : colon suffix after
+          the name of the property.
+        </p>
+        <a href="#my_section_2"><button class="btn">Hello</button></a>
+      </article>
+    </header>
+<!-- Section number 2 contains artcile with heading, paragraph and button-->
+    <section class="second__section" id="my_section_2">
+      <article class="text__wrapper">
+        <h1>How Are You Today?</h1>
+        <p>
+          Variables in SCSS allow you to assign an identifier of your choice to
+          a specific value. Why is that useful? Unlike in CSS, if you need to
+          tweak a value, you’ll only have to update it in one place and the
+          change will be reflected in multiple rules.
+        </p>
+        <a href="#my_section_3"><button class="btn">Fine</button></a>
+      </article>
+    </section>
+    <!-- Section number 3 contains artcile with heading, paragraph, unordered list and button-->
+    <section class="third__section special" id="my_section_3">
+      <article class="text__wrapper">
+        <h1>Happy to Hear!</h1>
+        <p>
+          There are different data types you can assign to a variable in CSS. In
+          addition to the color data type we have seen, there are also:
+          <ul>
+          <li>Numbers,such as 8.11, 12, and 10px.
+            Notice that while 10 has a unit of px associated with it, it is still considered a number. </li>
+          <li>Strings oftext, with and without quotes. Some examples
+            are "potato", 'tomato', span.</li>
+          <li>Booleans, or simply true and false. null, which is considered an
+            empty value</li>
+        </ul>
+        </p>
+        <a href="#my_section_4"><button class="btn">And You?</button></a>
+      </article>
+    </section>
+     <!-- Section number 4 contains artcile with heading, paragraph and button-->
+    <section class="forth__section" id="my_section_4">
+      <article class="text__wrapper">
+        <h1>I Feel Amazing</h1>
+        <p>
+          The @forward rule loads a Sass stylesheet and makes its mixins, functions, and variables available when your stylesheet is loaded with the @use rule. It makes it possible to organize Sass libraries across many files, while allowing their users to load a single entrypoint file.
+          <br/>
+          The @use rule can be used to import other
+          stylesheets as modules, the components of which can then be accessed
+          in a modular fashion. The namespace for the module is just the last
+          component of the path, but can be aliased using ‘as’.
+        </p>
+        <a href="#my_section_5"><button class="btn">Perfect</button></a>
+      </article>
+    </section>
+     <!-- Section number 5 contains artcile with heading, paragraph and button-->
+    <section class="fifth__section" id="my_section_5">
+      <article class="text__wrapper">
+        <h1>It Was Nice to Meet You</h1>
+        <p>
+          In addition to variables and nesting, Sass has multiple constructs
+          that reduce repetition. In Sass, a mixin lets you make groups of CSS
+          declarations that you want to reuse throughout your site.
+          <br />
+          <br />
+          Mixins also have the ability to take in a value. An argument, or
+          parameter, is a value passed to the mixin that will be used inside the
+          mixin,
+        </p>
+        <a href="#my_section_1"><button class="btn">Likewise</button></a>
+      </article>
+    </section>
+    <!-- End of the content -->
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

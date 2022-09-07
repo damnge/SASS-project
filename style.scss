@@ -1,0 +1,98 @@
+// The use rule can be used to import other stylesheets as modules, the components of which can then be accessed in a modular fashion.
+// The namespace for the module is just the last component of the path, but can be aliased using ‘as’.
+
+@use "./abstracts" as a;
+@use "./components/" as b;
+
+// My mixins in the main scss file
+// In addition to variables and nesting, Sass has multiple constructs that reduce repetition.
+
+@mixin change-color-section($bg, $c) {
+  width: 100%;
+  height: 100vh;
+
+  background-color: $bg;
+  color: $c;
+}
+
+@mixin change-button($bg, $c) {
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  min-width: 115px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 50px;
+
+  background-color: $bg;
+  color: $c;
+}
+
+// Mixins for each individual section each of the section contains diffetent background color and accent color attached to the text and button
+
+.first__section {
+  @include change-color-section(a.$primary, a.$primary-acc);
+  article {
+    .btn {
+      @include change-button(a.$primary-acc, a.$black);
+    }
+  }
+}
+.second__section {
+  @include change-color-section(a.$secondary, a.$secondary-acc);
+  article {
+    .btn {
+      @include change-button(a.$secondary-acc, a.$white);
+    }
+  }
+}
+.third__section {
+  @include change-color-section(a.$tertiary, a.$tertiary-acc);
+  article {
+    .btn {
+      @include change-button(a.$tertiary-acc, a.$white);
+    }
+  }
+}
+
+.forth__section {
+  @include change-color-section(a.$quaternary, a.$quaternary-acc);
+  article {
+    .btn {
+      @include change-button(a.$quaternary-acc, a.$white);
+    }
+  }
+}
+
+.fifth__section {
+  @include change-color-section(a.$quinary, a.$quinary-acc);
+  article {
+    .btn {
+      @include change-button(a.$quinary-acc, a.$white);
+    }
+  }
+}
+
+// Properties set for the text container using nesting in this example
+
+.text__wrapper {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 150px;
+
+  h1 {
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  p {
+    line-height: 30px;
+    font-size: 18px;
+  }
+  li {
+    font-family: a.$font-text;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
