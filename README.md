@@ -1,10 +1,10 @@
 # Learning SASS
 
-This is assigment for Vefskolinn course, Module number 3. In this project, I've shown some useful methods in SASS like:
+This is an assigment for Vefskolinn course, Module number 3. In this project, I've shown some useful methods in SASS like:
 
 - Nesting
 - Variables
-- Used different components and connected it to the styleshit thanks to the @use and @forward method
+- Used different components and connected it to the stylesheet thanks to the @use and @forward method
 - Created constructors with help of @mixins to avoid repetition
 
 ## Nesting Selectors
